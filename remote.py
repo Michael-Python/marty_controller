@@ -21,7 +21,7 @@ def key_input(event):
         print('Marty turns 15 degrees left') 
         marty.walk(2, 'auto', 15)
     elif key_press == 'e':
-        print('Marty turns 16 2/3 degrees right')
+        print('Marty turns 115 degrees right')
         marty.walk(2, 'auto', -15)
     elif key_press == 'z':
         print('Marty stands straight')
