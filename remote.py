@@ -2,9 +2,11 @@ from martypy import Marty
 import tkinter as tk
 marty = Marty('exp', '/dev/ttyAMA0')
 marty.get_ready()
+tk.bind_all('<Key>', key_input)
 
 def key_input(event):
     key_press = event.keysym.lower()
+    do while key_press != 'l'  
     if key_press == 'w':
         print('Marty walks two steps forward')
         marty.walk()
@@ -35,5 +37,4 @@ def key_input(event):
     marty.stop('pause')
 
 
-tk.bind_all('<Key>', key_input)
-tk.mainloop()s
+
