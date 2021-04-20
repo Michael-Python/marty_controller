@@ -35,6 +35,5 @@ def key_input(event):
     marty.stop('pause')
 
 
-keys  = tk.Tk()
-keys.bind_all('<Key>', key_input)
-keys.mainloop()s
+tk.bind_all('<Key>', key_input)
+tk.mainloop()s
